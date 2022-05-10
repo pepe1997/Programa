@@ -43,6 +43,13 @@ namespace Prueba
                         double n3 = double.Parse(Console.ReadLine());
                         Console.Write("El mayor de los tres numero es: "+num_mayor(n1,num_mayor(n2,n3)));
                         break;
+                    case 4:
+                        Console.Write("Ingrese un numero a evaluar\n");
+                        double num1=double.Parse(Console.ReadLine());
+                        Console.Write("Ingrese la potencia \n");
+                        double num2=double.Parse(Console.ReadLine());
+                        Console.Write("La potencia de "+num1+"! es: "+potencia(num1,num2);
+                        break;
 
                     case 5:
                         Console.Write("\n\nPROGRAMA FINALIZADO.\n\n");
@@ -50,10 +57,6 @@ namespace Prueba
                     default:
                         Console.Write("\n\nOPCIÓN INCORRECTA.\n\n");
                         break;
-
-
-
-
 
                 }
 
@@ -85,6 +88,10 @@ namespace Prueba
                 return n1;
             }
             return n2;
+        }
+        static double potencia(double n1, double n2)
+        {
+            return Math.Pow(n1,n2);
         }
 
     }
