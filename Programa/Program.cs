@@ -34,6 +34,16 @@ namespace Prueba
                         int num = int.Parse(Console.ReadLine());
                         Console.Write("El factorial de: " + num + "! es:" + factorial(num));
                         break;
+                    case 3:
+                        Console.Write("Ingrese el primer numero\n");
+                        double n1 = double.Parse(Console.ReadLine());
+                        Console.Write("Ingrese el segundo numero numero\n");
+                        double n2 = double.Parse(Console.ReadLine());
+                        Console.Write("Ingrese el tercer numero numero\n");
+                        double n3 = double.Parse(Console.ReadLine());
+                        Console.Write("El mayor de los tres numero es: "+num_mayor(n1,num_mayor(n2,n3)));
+                        break;
+
                     case 5:
                         Console.Write("\n\nPROGRAMA FINALIZADO.\n\n");
                         break;
@@ -67,6 +77,14 @@ namespace Prueba
                 return 1;
             }
             return n * factorial(n - 1);
+        }
+        static double num_mayor(double n1, double n2)
+        {
+            if (n1 > n2)
+            {
+                return n1;
+            }
+            return n2;
         }
 
     }
